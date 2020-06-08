@@ -93,6 +93,10 @@ const mapStateToProps = (state) => ({
     }, 0)
   ),
 });
+/**
+ * No reduce(), a ideia é sempre executar a função declarada, com o valor inicial informado. Se o valor inicial não for 
+ * informado, pega-se como valor inicial o primeiro valor do array 
+ */
 
 const mapDispatchToProps = (dispatch) =>
   bindActionCreators(CartActions, dispatch);
